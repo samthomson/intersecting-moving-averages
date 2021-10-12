@@ -1,0 +1,11 @@
+version: "2.2"
+services:
+  app:
+    build:
+      context: .
+      dockerfile: ./app/Dockerfile
+    environment:
+      - NODE_ENV=development
+      - LOG_LEVEL=info
+    volumes:
+      - ./app:/app
