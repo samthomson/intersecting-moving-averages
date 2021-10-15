@@ -4,12 +4,19 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "track": "node -r ts-node/register src/track.ts"
+    "track-old": "node -r ts-node/register src/track.ts",
+    "track": "ts-node src/track.ts"
   },
   "dependencies": {
+    "app-root-path": "^3.0.0",
     "graphql": "^15.6.1",
-    "node-fetch": "^3.0.0",
+    "node-fetch": "2",
     "ts-node": "^10.3.0",
-    "typescript": "^4.4.3"
+    "typescript": "^4.4.3",
+    "winston": "^3.3.3",
+    "winston-daily-rotate-file": "^4.5.5"
+  },
+  "devDependencies": {
+    "@types/node": "^16.11.0"
   }
 }

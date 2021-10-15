@@ -7,5 +7,6 @@ services:
     environment:
       - NODE_ENV=development
       - LOG_LEVEL=info
+      - ORACLE_URL=${ORACLE_URL}
     volumes:
       - ./app:/app
