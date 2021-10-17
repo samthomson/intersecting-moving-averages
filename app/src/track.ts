@@ -28,7 +28,7 @@ const init = async () => {
 		}
 
 		// wait/delay 1m
-		await Lib.delay(15000)
+		await Lib.delay(60000)
 	}
 }
 
